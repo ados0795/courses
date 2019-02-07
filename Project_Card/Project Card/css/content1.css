@@ -1,0 +1,197 @@
+
+.general-information {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr ;
+    grid-template-rows: 30px auto;
+    grid-template-areas: "gen-inf-head gen-inf-head"
+                         "my-foto description";
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.general-information h1{
+    grid-area: gen-inf-head;
+    justify-self: center;
+    font-size: 30px;
+}
+
+.my-foto {
+    grid-area: my-foto;
+    justify-self: end;
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+}
+
+.general-information_description {
+    grid-area: description;
+    font-size: 20px;
+}
+.general-information_description p{
+    text-align: justify;
+    padding: 5px 0 5px 0;
+}
+/*///////////////////////////////////////*/
+.hobby-information {
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 30px 1fr;
+    grid-row-gap: 20px;
+}
+
+.hobby-information h1{  
+    font-size: 30px;
+    justify-self: center;
+}
+.hobby-img_content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-self: center;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+.myhobby-img {
+   position: relative;
+    width: 350px;
+    height: 255px;
+}
+
+
+
+.img-description{ 
+    padding: 10px; 
+    position: absolute; 
+    bottom: 0px; 
+    right: 0; 
+    left: 0; 
+    width: 330px; 
+    height: 235px; 
+    opacity: 0; 
+    background: linear-gradient(to right top, 
+    rgba(142, 68, 173, 0.7) 0%, 
+    rgba(52, 152, 219, 0.7) 100%); 
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6); 
+    color: white; 
+}
+
+.img-description:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/********************************************/
+
+.cover {
+    width: 500px; 
+    margin: auto; 
+    padding-left: 170px;
+
+}
+ 
+h1.contact { 
+    margin-top:20px;
+    font-size: 30px; 
+    height: 50px; 
+    padding-left: 60px;
+
+}
+ 
+p.contact { 
+    font-size: 15px; 
+    margin-bottom: 15px; 
+    line-height: 36px; 
+    color: #4b4b4b; 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); 
+
+}
+ 
+input[type="text"] {
+    width: 300px; 
+    height: 5px;
+}
+ 
+textarea { 
+    width: 300px; 
+    height: 100px; 
+    resize: none;
+}
+ 
+input, textarea { 
+    background-color: #ccb4ff; 
+    border: 5px solid rgba(122, 192, 0, 0.15); 
+    padding: 10px; 
+    color: #4b4b4b; 
+    font-size: 18px; 
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: -10px;
+}
+ 
+input:focus, textarea:focus { 
+    border: 5px solid #cc7eff; 
+    background-color: rgba(255, 255, 255, 1);
+}
+ 
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    margin-top: 20px;
+}
+ 
+input[type="submit"]:hover {
+    color: #fff; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4); 
+    background-color: #cc7eff;
+}
+ 
+input[type="submit"]:active { 
+    top: 1px; 
+}
+
+.checkbox_wrapper {
+    display: flex;
+    justify-self: center;
+    justify-content: flex-start;
+    outline: none;
+    margin: 0 -10px 20px 0;
+    margin-top: 0px;
+}
+
+.checkbox_wrapper p{
+    user-select: none;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-bottom: 2px;
+
+#checkbox {
+    display: none;
+}
+
+#checkbox:checked + label:before {
+    content: "\2713";
+    color: #000;
+    text-align: center;
+    line-height: 15px;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+label:before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: rgba(255, 153, 51, 0.7);
+    border-radius: 3px;
+}

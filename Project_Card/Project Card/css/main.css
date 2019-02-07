@@ -1,0 +1,45 @@
+html{
+    color:#000;
+     background-image: linear-gradient(to right top,
+                                       #8e44ad 0%,
+                                       #3498db 100%);
+     user-select: none;
+
+}
+
+html,body,header,div,ul,ol,li,
+h1,pre,code,
+form,fieldset,legend,input,
+textarea,p,blockquote,th,td,a {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+ol,ul {
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    *font-size: 100%;
+}
+
+body{
+    font-family: 'Lora', serif;
+}

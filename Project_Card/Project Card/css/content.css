@@ -1,0 +1,161 @@
+
+.general-information {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr ;
+    grid-template-rows: 30px auto;
+    grid-template-areas: "gen-inf-head gen-inf-head"
+                         "my-foto description";
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.general-information h1{
+    grid-area: gen-inf-head;
+    justify-self: center;
+    font-size: 30px;
+}
+
+.my-foto {
+    grid-area: my-foto;
+    justify-self: end;
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+}
+
+.general-information_description {
+    grid-area: description;
+    font-size: 20px;
+}
+.general-information_description p{
+    text-align: justify;
+    padding: 5px 0 5px 0;
+}
+/*///////////////////////////////////////*/
+.hobby-information {
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 30px 1fr;
+    grid-row-gap: 20px;
+}
+
+.hobby-information h1{
+    font-size: 30px;
+    justify-self: center;
+}
+
+.hobby-img_content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-self: center;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+.myhobby-img {
+    position: relative;
+    width: 350px;
+    height: 255px;
+}
+
+.img-description{
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    width:330px;
+    height: 235px;
+    opacity: 1;
+    background: linear-gradient(to right top,
+                                rgba(142, 68, 173, 0.7) 0%,
+                                rgba(52, 152, 219, 0.7) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+                inset 0 0 1px rgba(255, 255, 255, 0.6);
+    color: white;
+    opacity: 0;
+}
+
+.img-description:hover{
+    opacity: 1;
+    transition: 0.7s;
+}
+/********************************************/
+.Feedback {
+    margin-top: 50px;
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+.Feedback h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.form-feedback {
+    display: grid;
+    justify-self: center;
+    grid-row-gap: 10px;
+}
+
+.input-fio, .email {
+    margin-left: 25px;
+    width: 300px;
+    height: 30px;
+    padding-left: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1),
+                inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background-color: #ccb4ff; 
+    border: 2px solid rgba(122, 192, 0, 0.15); 
+}
+
+.textarea {
+     margin-left: 25px;
+     width: 295px;
+     height: 200px;
+     resize: none;
+     padding: 5px;
+     border-radius: 5px;
+     background-color: #ccb4ff; 
+     border: 2px solid rgba(122, 192, 0, 0.15); 
+
+}
+.checkbox_wrapper{
+    display: grid;
+    grid-template-columns: 15px 340px;
+    grid-column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.checkbox_wrapper p{
+    margin-left: 25px;
+    font-size: 12px;
+}
+
+#checkbox{
+    margin-left: 25px;
+}
+
+.submit {
+    margin-left: 25px;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    color: #fff; 
+    background-color: #cc7eff;
+    border:solid 2px rgba(122, 192, 0, 0.15) ;
+}
+
+.input-fio:focus:hover, .textarea:focus, .email:focus { 
+    border: 2px solid #cc7eff; 
+    background-color: rgba(255, 255, 255, 1);
+}
+
+ 
+.submit:hover {
+    transition: 0.7s;
+    background-color: #cc42ff ;
+    border-color: #fff; 
+}
